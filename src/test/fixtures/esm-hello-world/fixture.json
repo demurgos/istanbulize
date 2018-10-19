@@ -1,0 +1,7 @@
+{
+  "skip": false,
+  "args": [
+    "--experimental-modules",
+    "main.js"
+  ]
+}

@@ -1,0 +1,103 @@
+[
+  {
+    "sourceText": "(function (exports, require, module, __filename, __dirname) { import('./hello-world')\n  .then(helloWorld => helloWorld.helloWorld())\n\n});",
+    "sourceType": "script",
+    "scriptCov": {
+      "scriptId": "76",
+      "url": "/main.js",
+      "functions": [
+        {
+          "functionName": "",
+          "ranges": [
+            {
+              "startOffset": 0,
+              "endOffset": 137,
+              "count": 1
+            }
+          ],
+          "isBlockCoverage": true
+        },
+        {
+          "functionName": "",
+          "ranges": [
+            {
+              "startOffset": 1,
+              "endOffset": 135,
+              "count": 1
+            }
+          ],
+          "isBlockCoverage": true
+        },
+        {
+          "functionName": "then.helloWorld",
+          "ranges": [
+            {
+              "startOffset": 94,
+              "endOffset": 131,
+              "count": 1
+            }
+          ],
+          "isBlockCoverage": true
+        }
+      ]
+    }
+  },
+  {
+    "sourceText": "export function helloWorld () {\n  console.log('Hello, World!')\n}\n",
+    "sourceType": "module",
+    "scriptCov": {
+      "scriptId": "78",
+      "url": "file:///hello-world.mjs",
+      "functions": [
+        {
+          "functionName": "",
+          "ranges": [
+            {
+              "startOffset": 0,
+              "endOffset": 65,
+              "count": 2
+            }
+          ],
+          "isBlockCoverage": true
+        },
+        {
+          "functionName": "helloWorld",
+          "ranges": [
+            {
+              "startOffset": 7,
+              "endOffset": 64,
+              "count": 1
+            }
+          ],
+          "isBlockCoverage": true
+        }
+      ]
+    }
+  },
+  {
+    "sourceText": "\n  import {\n    executor,\n    $default\n  } from \"\";\n  export {\n    $default as default\n  }\n  if (typeof executor === \"function\") {\n    // add await to this later if top level await comes along\n    executor()\n  }",
+    "sourceType": "module",
+    "scriptCov": {
+      "scriptId": "75",
+      "url": "file:///main.js",
+      "functions": [
+        {
+          "functionName": "",
+          "ranges": [
+            {
+              "startOffset": 0,
+              "endOffset": 211,
+              "count": 2
+            },
+            {
+              "startOffset": 129,
+              "endOffset": 211,
+              "count": 1
+            }
+          ],
+          "isBlockCoverage": true
+        }
+      ]
+    }
+  }
+]

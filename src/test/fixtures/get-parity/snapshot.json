@@ -1,0 +1,131 @@
+{
+  "/main.js": {
+    "path": "/main.js",
+    "statementMap": {
+      "s0": {
+        "start": {
+          "line": 1,
+          "column": 0
+        },
+        "end": {
+          "line": 10,
+          "column": 3
+        }
+      },
+      "s1": {
+        "start": {
+          "line": 2,
+          "column": 2
+        },
+        "end": {
+          "line": 2,
+          "column": 37
+        }
+      },
+      "s2": {
+        "start": {
+          "line": 5,
+          "column": 0
+        },
+        "end": {
+          "line": 5,
+          "column": 12
+        }
+      },
+      "s3": {
+        "start": {
+          "line": 6,
+          "column": 0
+        },
+        "end": {
+          "line": 6,
+          "column": 12
+        }
+      },
+      "s4": {
+        "start": {
+          "line": 7,
+          "column": 0
+        },
+        "end": {
+          "line": 7,
+          "column": 12
+        }
+      },
+      "s5": {
+        "start": {
+          "line": 8,
+          "column": 0
+        },
+        "end": {
+          "line": 8,
+          "column": 12
+        }
+      }
+    },
+    "s": {
+      "s0": 1,
+      "s1": 4,
+      "s2": 1,
+      "s3": 1,
+      "s4": 1,
+      "s5": 1
+    },
+    "fnMap": {
+      "f0": {
+        "name": "",
+        "decl": {
+          "start": {
+            "line": 1,
+            "column": 1
+          },
+          "end": {
+            "line": 10,
+            "column": 1
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 1,
+            "column": 1
+          },
+          "end": {
+            "line": 10,
+            "column": 1
+          }
+        },
+        "line": 1
+      },
+      "f1": {
+        "name": "getParity",
+        "decl": {
+          "start": {
+            "line": 1,
+            "column": 62
+          },
+          "end": {
+            "line": 3,
+            "column": 1
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 1,
+            "column": 62
+          },
+          "end": {
+            "line": 3,
+            "column": 1
+          }
+        },
+        "line": 1
+      }
+    },
+    "f": {
+      "f0": 1,
+      "f1": 4
+    },
+    "branchMap": {},
+    "b": {}
+  }
+}

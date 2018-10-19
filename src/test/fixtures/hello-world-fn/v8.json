@@ -1,0 +1,45 @@
+[
+  {
+    "sourceText": "(function (exports, require, module, __filename, __dirname) { function helloWorld () {\n  console.log('Hello, World!')\n}\n\nhelloWorld()\nhelloWorld()\n\n});",
+    "sourceType": "script",
+    "scriptCov": {
+      "scriptId": "63",
+      "url": "/main.js",
+      "functions": [
+        {
+          "functionName": "",
+          "ranges": [
+            {
+              "startOffset": 0,
+              "endOffset": 151,
+              "count": 1
+            }
+          ],
+          "isBlockCoverage": true
+        },
+        {
+          "functionName": "",
+          "ranges": [
+            {
+              "startOffset": 1,
+              "endOffset": 149,
+              "count": 1
+            }
+          ],
+          "isBlockCoverage": true
+        },
+        {
+          "functionName": "helloWorld",
+          "ranges": [
+            {
+              "startOffset": 62,
+              "endOffset": 119,
+              "count": 2
+            }
+          ],
+          "isBlockCoverage": true
+        }
+      ]
+    }
+  }
+]

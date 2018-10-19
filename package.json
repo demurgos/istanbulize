@@ -1,0 +1,70 @@
+{
+  "name": "istanbulize",
+  "version": "0.1.0",
+  "description": "AST-based conversion from V8 coverage to Istanbul report",
+  "main": "build/lib/index.js",
+  "types": "build/lib/index.d.ts",
+  "scripts": {
+    "generate:fixtures": "ts-node tools/generate-fixtures.ts",
+    "generate:snapshots": "cross-env SNAPSHOT=1 mocha --require ts-node/register \"./src/test/**/*.spec.ts\"",
+    "lint": "tslint --project src/lib/tsconfig.json",
+    "posttest": "tslint --project src/lib/tsconfig.json",
+    "prepare": "tsc --project src/lib/tsconfig.json",
+    "release": "standard-version",
+    "test": "nyc mocha --require ts-node/register \"./src/test/**/*.spec.ts\""
+  },
+  "repository": {
+    "url": "git@github.com:bcoe/v8-to-istanbul.git"
+  },
+  "files": [
+    "build/lib",
+    "CHANGELOG.md",
+    "LICENSE.txt",
+    "README.md"
+  ],
+  "keywords": [
+    "istanbul",
+    "v8",
+    "coverage"
+  ],
+  "author": "Charles Samborski <demurgos@demurgos.net>",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/parser": "^7.0.0-rc.1",
+    "@babel/traverse": "^7.0.0-rc.1",
+    "@babel/types": "^7.0.0-beta.56",
+    "@c88/v8-coverage": "^0.1.0",
+    "@types/babel__parser": "^7.0.0",
+    "@types/babel__traverse": "^7.0.0",
+    "devtools-protocol": "0.0.579242",
+    "furi": "^0.1.0",
+    "node-script-url": "^0.1.1"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.1.4",
+    "@types/mocha": "^5.2.5",
+    "@types/node": "^10.5.6",
+    "bluebird": "^3.5.1",
+    "chai": "^4.1.2",
+    "chrome-remote-interface": "^0.26.1",
+    "cross-env": "^5.2.0",
+    "mocha": "^5.2.0",
+    "standard-version": "^4.2.0",
+    "ts-node": "^7.0.0",
+    "tslint": "^5.11.0",
+    "typescript": "^3.0.1"
+  },
+  "nyc": {
+    "include": [
+      "src/lib/**/*.ts"
+    ],
+    "extension": [
+      ".ts"
+    ],
+    "reporter": [
+      "html",
+      "text"
+    ],
+    "all": true
+  }
+}
