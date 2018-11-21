@@ -21,6 +21,8 @@ interface Fixture {
   output: string;
 }
 
+const CJS_BRIDGE = "\n  import {\n    executor,\n    $default\n  } from \"\";\n  export {\n    $default as default\n  }\n  if (typeof executor === \"function\") {\n    // add await to this later if top level await comes along\n    executor()\n  }";
+
 async function* getFixtures(): AsyncIterable<Fixture> {
   const projectRoot = sysPath.resolve(__dirname, "..");
   const fixturesDir = sysPath.resolve(projectRoot, "src", "test", "fixtures");
@@ -132,7 +134,7 @@ interface FixtureData {
 async function getCoverage(port: number): Promise<FixtureData[]> {
   return new Promise<FixtureData[]>(async (resolve, reject) => {
     const timeoutId: NodeJS.Timer = setTimeout(onTimeout, GET_COVERAGE_TIMEOUT);
-    let client: Protocol.ProtocolApi;
+    let client: any;
     let mainExecutionContextId: Protocol.Runtime.ExecutionContextId | undefined;
     let state: string = "WaitingForMainContext"; // TODO: enum
     try {
@@ -221,7 +223,7 @@ function normalizeData(
   const baseDirUrl: string = furi.fromSysPath(baseDir).href;
   for (const fixture of fixtures) {
     const scriptCov: ScriptCov = fixture.scriptCov;
-    if (scriptCov.url === "") {
+    if (scriptCov.url === "" || fixture.sourceText === CJS_BRIDGE) {
       continue;
     }
     const urlInfo: ScriptUrl = parseNodeScriptUrl(scriptCov.url);

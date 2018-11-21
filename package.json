@@ -30,29 +30,28 @@
   "author": "Charles Samborski <demurgos@demurgos.net>",
   "license": "MIT",
   "dependencies": {
-    "@babel/parser": "^7.0.0-rc.1",
-    "@babel/traverse": "^7.0.0-rc.1",
-    "@babel/types": "^7.0.0-beta.56",
+    "@babel/parser": "^7.1.6",
+    "@babel/traverse": "^7.1.6",
+    "@babel/types": "^7.1.6",
     "@c88/v8-coverage": "^0.1.0",
-    "@types/babel__parser": "^7.0.0",
-    "@types/babel__traverse": "^7.0.0",
-    "devtools-protocol": "0.0.579242",
-    "furi": "^0.1.0",
-    "node-script-url": "^0.1.1"
+    "@types/babel__traverse": "^7.0.1",
+    "devtools-protocol": "0.0.609786",
+    "furi": "^1.0.0",
+    "node-script-url": "^0.1.2"
   },
   "devDependencies": {
-    "@types/chai": "^4.1.4",
+    "@types/chai": "^4.1.7",
     "@types/mocha": "^5.2.5",
-    "@types/node": "^10.5.6",
-    "bluebird": "^3.5.1",
-    "chai": "^4.1.2",
+    "@types/node": "^10.12.10",
+    "bluebird": "^3.5.3",
+    "chai": "^4.2.0",
     "chrome-remote-interface": "^0.26.1",
     "cross-env": "^5.2.0",
     "mocha": "^5.2.0",
-    "standard-version": "^4.2.0",
-    "ts-node": "^7.0.0",
+    "standard-version": "^4.4.0",
+    "ts-node": "^7.0.1",
     "tslint": "^5.11.0",
-    "typescript": "^3.0.1"
+    "typescript": "^3.1.6"
   },
   "nyc": {
     "include": [

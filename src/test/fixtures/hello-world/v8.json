@@ -1,10 +1,10 @@
 [
   {
     "sourceText": "(function (exports, require, module, __filename, __dirname) { console.log('Hello, World!')\n\n});",
-    "sourceType": "script",
+    "sourceType": "module",
     "scriptCov": {
-      "scriptId": "63",
-      "url": "/main.js",
+      "scriptId": "64",
+      "url": "file:///main.js",
       "functions": [
         {
           "functionName": "",

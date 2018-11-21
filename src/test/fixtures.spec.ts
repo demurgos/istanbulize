@@ -1,10 +1,10 @@
+import { ScriptCov } from "@c88/v8-coverage";
 import chai from "chai";
 import fs from "fs";
 import path from "path";
 import { istanbulize, SourceType } from "../lib";
 import { IstanbulFileCoverageData } from "../lib/types";
 import { FixtureOptions } from "./fixture-options";
-import { ScriptCov } from "@c88/v8-coverage";
 
 const FIXTURES_DIR = path.posix.resolve(__dirname, "fixtures");
 const DATA_FILE_NAME = "v8.json";
@@ -14,13 +14,18 @@ describe("Fixtures", () => {
     (fixture.skip ? describe.skip : describe)(fixture.name, testFixture);
 
     function testFixture() {
-      for (const item of fixture.data) {
-        if (process.env.SNAPSHOT === "1") {
+      if (process.env.SNAPSHOT === "1") {
+        const snapShotData: Record<string, IstanbulFileCoverageData> = Object.create(null);
+        for (const item of fixture.data) {
           it(`Generates a snapshot for: ${item.scriptCov.url}`, async () => {
             const istanbulCoverage: IstanbulFileCoverageData = istanbulize(item);
-            await updateSnapshot(fixture.name, item.scriptCov.url, istanbulCoverage);
+            snapShotData[item.scriptCov.url] = istanbulCoverage;
+            // TODO: Only set for last test.
+            await setSnapshot(fixture.name, snapShotData);
           });
-        } else {
+        }
+      } else {
+        for (const item of fixture.data) {
           it(`Matches the snapshot for: ${item.scriptCov.url}`, async () => {
             const expected: IstanbulFileCoverageData = await getSnapshot(fixture.name, item.scriptCov.url);
             const actual: IstanbulFileCoverageData = istanbulize(item);
@@ -87,17 +92,8 @@ async function getSnapshot(fixtureName: string, url: string): Promise<IstanbulFi
   return snapshotData[url];
 }
 
-async function updateSnapshot(fixtureName: string, url: string, value: IstanbulFileCoverageData): Promise<void> {
+async function setSnapshot(fixtureName: string, data: Record<string, IstanbulFileCoverageData>): Promise<void> {
   const fixtureDir = path.resolve(FIXTURES_DIR, fixtureName);
   const snapshotPath: string = path.resolve(fixtureDir, "snapshot.json");
-  let snapshotData: Record<string, IstanbulFileCoverageData> = {};
-  try {
-    snapshotData = JSON.parse(fs.readFileSync(snapshotPath).toString("UTF-8"));
-  } catch (err) {
-    if (err.code !== "ENOENT") {
-      throw err;
-    }
-  }
-  snapshotData[url] = value;
-  fs.writeFileSync(snapshotPath, JSON.stringify(snapshotData, null, 2), {encoding: "UTF-8"});
+  fs.writeFileSync(snapshotPath, JSON.stringify(data, null, 2), {encoding: "UTF-8"});
 }

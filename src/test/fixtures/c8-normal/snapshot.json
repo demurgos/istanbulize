@@ -1,6 +1,6 @@
 {
-  "/main.js": {
-    "path": "/main.js",
+  "file:///main.js": {
+    "path": "file:///main.js",
     "statementMap": {
       "s0": {
         "start": {
@@ -197,8 +197,8 @@
     "branchMap": {},
     "b": {}
   },
-  "/timeout.js": {
-    "path": "/timeout.js",
+  "file:///timeout.js": {
+    "path": "file:///timeout.js",
     "statementMap": {
       "s0": {
         "start": {

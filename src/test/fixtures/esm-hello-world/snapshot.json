@@ -1,6 +1,66 @@
 {
-  "/main.js": {
-    "path": "/main.js",
+  "file:///hello-world.mjs": {
+    "path": "file:///hello-world.mjs",
+    "statementMap": {
+      "s0": {
+        "start": {
+          "line": 1,
+          "column": 0
+        },
+        "end": {
+          "line": 3,
+          "column": 1
+        }
+      },
+      "s1": {
+        "start": {
+          "line": 2,
+          "column": 2
+        },
+        "end": {
+          "line": 2,
+          "column": 30
+        }
+      }
+    },
+    "s": {
+      "s0": 2,
+      "s1": 1
+    },
+    "fnMap": {
+      "f0": {
+        "name": "helloWorld",
+        "decl": {
+          "start": {
+            "line": 1,
+            "column": 7
+          },
+          "end": {
+            "line": 3,
+            "column": 1
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 1,
+            "column": 7
+          },
+          "end": {
+            "line": 3,
+            "column": 1
+          }
+        },
+        "line": 1
+      }
+    },
+    "f": {
+      "f0": 1
+    },
+    "branchMap": {},
+    "b": {}
+  },
+  "file:///main.js": {
+    "path": "file:///main.js",
     "statementMap": {
       "s0": {
         "start": {
@@ -81,121 +141,6 @@
       "f0": 1,
       "f1": 1
     },
-    "branchMap": {},
-    "b": {}
-  },
-  "file:///hello-world.mjs": {
-    "path": "file:///hello-world.mjs",
-    "statementMap": {
-      "s0": {
-        "start": {
-          "line": 1,
-          "column": 0
-        },
-        "end": {
-          "line": 3,
-          "column": 1
-        }
-      },
-      "s1": {
-        "start": {
-          "line": 2,
-          "column": 2
-        },
-        "end": {
-          "line": 2,
-          "column": 30
-        }
-      }
-    },
-    "s": {
-      "s0": 2,
-      "s1": 1
-    },
-    "fnMap": {
-      "f0": {
-        "name": "helloWorld",
-        "decl": {
-          "start": {
-            "line": 1,
-            "column": 7
-          },
-          "end": {
-            "line": 3,
-            "column": 1
-          }
-        },
-        "loc": {
-          "start": {
-            "line": 1,
-            "column": 7
-          },
-          "end": {
-            "line": 3,
-            "column": 1
-          }
-        },
-        "line": 1
-      }
-    },
-    "f": {
-      "f0": 1
-    },
-    "branchMap": {},
-    "b": {}
-  },
-  "file:///main.js": {
-    "path": "file:///main.js",
-    "statementMap": {
-      "s0": {
-        "start": {
-          "line": 2,
-          "column": 2
-        },
-        "end": {
-          "line": 5,
-          "column": 12
-        }
-      },
-      "s1": {
-        "start": {
-          "line": 6,
-          "column": 2
-        },
-        "end": {
-          "line": 8,
-          "column": 3
-        }
-      },
-      "s2": {
-        "start": {
-          "line": 9,
-          "column": 2
-        },
-        "end": {
-          "line": 12,
-          "column": 3
-        }
-      },
-      "s3": {
-        "start": {
-          "line": 11,
-          "column": 4
-        },
-        "end": {
-          "line": 11,
-          "column": 14
-        }
-      }
-    },
-    "s": {
-      "s0": 2,
-      "s1": 2,
-      "s2": 2,
-      "s3": 1
-    },
-    "fnMap": {},
-    "f": {},
     "branchMap": {},
     "b": {}
   }

@@ -1,135 +1,6 @@
 {
-  "/main.js": {
-    "path": "/main.js",
-    "statementMap": {
-      "s0": {
-        "start": {
-          "line": 1,
-          "column": 0
-        },
-        "end": {
-          "line": 10,
-          "column": 3
-        }
-      },
-      "s1": {
-        "start": {
-          "line": 1,
-          "column": 62
-        },
-        "end": {
-          "line": 1,
-          "column": 99
-        }
-      },
-      "s2": {
-        "start": {
-          "line": 2,
-          "column": 0
-        },
-        "end": {
-          "line": 2,
-          "column": 25
-        }
-      },
-      "s3": {
-        "start": {
-          "line": 4,
-          "column": 0
-        },
-        "end": {
-          "line": 6,
-          "column": 3
-        }
-      },
-      "s4": {
-        "start": {
-          "line": 5,
-          "column": 2
-        },
-        "end": {
-          "line": 5,
-          "column": 35
-        }
-      },
-      "s5": {
-        "start": {
-          "line": 8,
-          "column": 0
-        },
-        "end": {
-          "line": 8,
-          "column": 30
-        }
-      }
-    },
-    "s": {
-      "s0": 1,
-      "s1": 1,
-      "s2": 1,
-      "s3": 1,
-      "s4": 1,
-      "s5": 1
-    },
-    "fnMap": {
-      "f0": {
-        "name": "",
-        "decl": {
-          "start": {
-            "line": 1,
-            "column": 1
-          },
-          "end": {
-            "line": 10,
-            "column": 1
-          }
-        },
-        "loc": {
-          "start": {
-            "line": 1,
-            "column": 1
-          },
-          "end": {
-            "line": 10,
-            "column": 1
-          }
-        },
-        "line": 1
-      },
-      "f1": {
-        "name": "",
-        "decl": {
-          "start": {
-            "line": 4,
-            "column": 39
-          },
-          "end": {
-            "line": 6,
-            "column": 1
-          }
-        },
-        "loc": {
-          "start": {
-            "line": 4,
-            "column": 39
-          },
-          "end": {
-            "line": 6,
-            "column": 1
-          }
-        },
-        "line": 4
-      }
-    },
-    "f": {
-      "f0": 1,
-      "f1": 1
-    },
-    "branchMap": {},
-    "b": {}
-  },
-  "/data/projects/web/istanbulize/node_modules/bluebird/js/release/any.js": {
-    "path": "/data/projects/web/istanbulize/node_modules/bluebird/js/release/any.js",
+  "file:///data/projects/web/istanbulize/node_modules/bluebird/js/release/any.js": {
+    "path": "file:///data/projects/web/istanbulize/node_modules/bluebird/js/release/any.js",
     "statementMap": {
       "s0": {
         "start": {
@@ -409,8 +280,8 @@
     "branchMap": {},
     "b": {}
   },
-  "/data/projects/web/istanbulize/node_modules/bluebird/js/release/async.js": {
-    "path": "/data/projects/web/istanbulize/node_modules/bluebird/js/release/async.js",
+  "file:///data/projects/web/istanbulize/node_modules/bluebird/js/release/async.js": {
+    "path": "file:///data/projects/web/istanbulize/node_modules/bluebird/js/release/async.js",
     "statementMap": {
       "s0": {
         "start": {
@@ -2178,8 +2049,8 @@
     "branchMap": {},
     "b": {}
   },
-  "/data/projects/web/istanbulize/node_modules/bluebird/js/release/bind.js": {
-    "path": "/data/projects/web/istanbulize/node_modules/bluebird/js/release/bind.js",
+  "file:///data/projects/web/istanbulize/node_modules/bluebird/js/release/bind.js": {
+    "path": "file:///data/projects/web/istanbulize/node_modules/bluebird/js/release/bind.js",
     "statementMap": {
       "s0": {
         "start": {
@@ -2881,8 +2752,8 @@
     "branchMap": {},
     "b": {}
   },
-  "/data/projects/web/istanbulize/node_modules/bluebird/js/release/bluebird.js": {
-    "path": "/data/projects/web/istanbulize/node_modules/bluebird/js/release/bluebird.js",
+  "file:///data/projects/web/istanbulize/node_modules/bluebird/js/release/bluebird.js": {
+    "path": "file:///data/projects/web/istanbulize/node_modules/bluebird/js/release/bluebird.js",
     "statementMap": {
       "s0": {
         "start": {
@@ -3065,8 +2936,8 @@
     "branchMap": {},
     "b": {}
   },
-  "/data/projects/web/istanbulize/node_modules/bluebird/js/release/call_get.js": {
-    "path": "/data/projects/web/istanbulize/node_modules/bluebird/js/release/call_get.js",
+  "file:///data/projects/web/istanbulize/node_modules/bluebird/js/release/call_get.js": {
+    "path": "file:///data/projects/web/istanbulize/node_modules/bluebird/js/release/call_get.js",
     "statementMap": {
       "s0": {
         "start": {
@@ -4206,8 +4077,8 @@
     "branchMap": {},
     "b": {}
   },
-  "/data/projects/web/istanbulize/node_modules/bluebird/js/release/cancel.js": {
-    "path": "/data/projects/web/istanbulize/node_modules/bluebird/js/release/cancel.js",
+  "file:///data/projects/web/istanbulize/node_modules/bluebird/js/release/cancel.js": {
+    "path": "file:///data/projects/web/istanbulize/node_modules/bluebird/js/release/cancel.js",
     "statementMap": {
       "s0": {
         "start": {
@@ -5510,8 +5381,8 @@
     "branchMap": {},
     "b": {}
   },
-  "/data/projects/web/istanbulize/node_modules/bluebird/js/release/catch_filter.js": {
-    "path": "/data/projects/web/istanbulize/node_modules/bluebird/js/release/catch_filter.js",
+  "file:///data/projects/web/istanbulize/node_modules/bluebird/js/release/catch_filter.js": {
+    "path": "file:///data/projects/web/istanbulize/node_modules/bluebird/js/release/catch_filter.js",
     "statementMap": {
       "s0": {
         "start": {
@@ -5942,8 +5813,8 @@
     "branchMap": {},
     "b": {}
   },
-  "/data/projects/web/istanbulize/node_modules/bluebird/js/release/context.js": {
-    "path": "/data/projects/web/istanbulize/node_modules/bluebird/js/release/context.js",
+  "file:///data/projects/web/istanbulize/node_modules/bluebird/js/release/context.js": {
+    "path": "file:///data/projects/web/istanbulize/node_modules/bluebird/js/release/context.js",
     "statementMap": {
       "s0": {
         "start": {
@@ -6902,8 +6773,8 @@
     "branchMap": {},
     "b": {}
   },
-  "/data/projects/web/istanbulize/node_modules/bluebird/js/release/debuggability.js": {
-    "path": "/data/projects/web/istanbulize/node_modules/bluebird/js/release/debuggability.js",
+  "file:///data/projects/web/istanbulize/node_modules/bluebird/js/release/debuggability.js": {
+    "path": "file:///data/projects/web/istanbulize/node_modules/bluebird/js/release/debuggability.js",
     "statementMap": {
       "s0": {
         "start": {
@@ -15288,8 +15159,8 @@
     "branchMap": {},
     "b": {}
   },
-  "/data/projects/web/istanbulize/node_modules/bluebird/js/release/direct_resolve.js": {
-    "path": "/data/projects/web/istanbulize/node_modules/bluebird/js/release/direct_resolve.js",
+  "file:///data/projects/web/istanbulize/node_modules/bluebird/js/release/direct_resolve.js": {
+    "path": "file:///data/projects/web/istanbulize/node_modules/bluebird/js/release/direct_resolve.js",
     "statementMap": {
       "s0": {
         "start": {
@@ -15859,8 +15730,8 @@
     "branchMap": {},
     "b": {}
   },
-  "/data/projects/web/istanbulize/node_modules/bluebird/js/release/each.js": {
-    "path": "/data/projects/web/istanbulize/node_modules/bluebird/js/release/each.js",
+  "file:///data/projects/web/istanbulize/node_modules/bluebird/js/release/each.js": {
+    "path": "file:///data/projects/web/istanbulize/node_modules/bluebird/js/release/each.js",
     "statementMap": {
       "s0": {
         "start": {
@@ -16190,8 +16061,8 @@
     "branchMap": {},
     "b": {}
   },
-  "/data/projects/web/istanbulize/node_modules/bluebird/js/release/errors.js": {
-    "path": "/data/projects/web/istanbulize/node_modules/bluebird/js/release/errors.js",
+  "file:///data/projects/web/istanbulize/node_modules/bluebird/js/release/errors.js": {
+    "path": "file:///data/projects/web/istanbulize/node_modules/bluebird/js/release/errors.js",
     "statementMap": {
       "s0": {
         "start": {
@@ -17021,8 +16892,8 @@
     "branchMap": {},
     "b": {}
   },
-  "/data/projects/web/istanbulize/node_modules/bluebird/js/release/es5.js": {
-    "path": "/data/projects/web/istanbulize/node_modules/bluebird/js/release/es5.js",
+  "file:///data/projects/web/istanbulize/node_modules/bluebird/js/release/es5.js": {
+    "path": "file:///data/projects/web/istanbulize/node_modules/bluebird/js/release/es5.js",
     "statementMap": {
       "s0": {
         "start": {
@@ -17647,8 +17518,8 @@
     "branchMap": {},
     "b": {}
   },
-  "/data/projects/web/istanbulize/node_modules/bluebird/js/release/filter.js": {
-    "path": "/data/projects/web/istanbulize/node_modules/bluebird/js/release/filter.js",
+  "file:///data/projects/web/istanbulize/node_modules/bluebird/js/release/filter.js": {
+    "path": "file:///data/projects/web/istanbulize/node_modules/bluebird/js/release/filter.js",
     "statementMap": {
       "s0": {
         "start": {
@@ -17837,8 +17708,8 @@
     "branchMap": {},
     "b": {}
   },
-  "/data/projects/web/istanbulize/node_modules/bluebird/js/release/finally.js": {
-    "path": "/data/projects/web/istanbulize/node_modules/bluebird/js/release/finally.js",
+  "file:///data/projects/web/istanbulize/node_modules/bluebird/js/release/finally.js": {
+    "path": "file:///data/projects/web/istanbulize/node_modules/bluebird/js/release/finally.js",
     "statementMap": {
       "s0": {
         "start": {
@@ -19036,8 +18907,8 @@
     "branchMap": {},
     "b": {}
   },
-  "/data/projects/web/istanbulize/node_modules/bluebird/js/release/generators.js": {
-    "path": "/data/projects/web/istanbulize/node_modules/bluebird/js/release/generators.js",
+  "file:///data/projects/web/istanbulize/node_modules/bluebird/js/release/generators.js": {
+    "path": "file:///data/projects/web/istanbulize/node_modules/bluebird/js/release/generators.js",
     "statementMap": {
       "s0": {
         "start": {
@@ -21061,8 +20932,8 @@
     "branchMap": {},
     "b": {}
   },
-  "/data/projects/web/istanbulize/node_modules/bluebird/js/release/join.js": {
-    "path": "/data/projects/web/istanbulize/node_modules/bluebird/js/release/join.js",
+  "file:///data/projects/web/istanbulize/node_modules/bluebird/js/release/join.js": {
+    "path": "file:///data/projects/web/istanbulize/node_modules/bluebird/js/release/join.js",
     "statementMap": {
       "s0": {
         "start": {
@@ -22143,8 +22014,8 @@
     "branchMap": {},
     "b": {}
   },
-  "/data/projects/web/istanbulize/node_modules/bluebird/js/release/map.js": {
-    "path": "/data/projects/web/istanbulize/node_modules/bluebird/js/release/map.js",
+  "file:///data/projects/web/istanbulize/node_modules/bluebird/js/release/map.js": {
+    "path": "file:///data/projects/web/istanbulize/node_modules/bluebird/js/release/map.js",
     "statementMap": {
       "s0": {
         "start": {
@@ -23666,8 +23537,8 @@
     "branchMap": {},
     "b": {}
   },
-  "/data/projects/web/istanbulize/node_modules/bluebird/js/release/method.js": {
-    "path": "/data/projects/web/istanbulize/node_modules/bluebird/js/release/method.js",
+  "file:///data/projects/web/istanbulize/node_modules/bluebird/js/release/method.js": {
+    "path": "file:///data/projects/web/istanbulize/node_modules/bluebird/js/release/method.js",
     "statementMap": {
       "s0": {
         "start": {
@@ -24236,8 +24107,8 @@
     "branchMap": {},
     "b": {}
   },
-  "/data/projects/web/istanbulize/node_modules/bluebird/js/release/nodeback.js": {
-    "path": "/data/projects/web/istanbulize/node_modules/bluebird/js/release/nodeback.js",
+  "file:///data/projects/web/istanbulize/node_modules/bluebird/js/release/nodeback.js": {
+    "path": "file:///data/projects/web/istanbulize/node_modules/bluebird/js/release/nodeback.js",
     "statementMap": {
       "s0": {
         "start": {
@@ -24803,8 +24674,8 @@
     "branchMap": {},
     "b": {}
   },
-  "/data/projects/web/istanbulize/node_modules/bluebird/js/release/nodeify.js": {
-    "path": "/data/projects/web/istanbulize/node_modules/bluebird/js/release/nodeify.js",
+  "file:///data/projects/web/istanbulize/node_modules/bluebird/js/release/nodeify.js": {
+    "path": "file:///data/projects/web/istanbulize/node_modules/bluebird/js/release/nodeify.js",
     "statementMap": {
       "s0": {
         "start": {
@@ -25318,8 +25189,8 @@
     "branchMap": {},
     "b": {}
   },
-  "/data/projects/web/istanbulize/node_modules/bluebird/js/release/promise.js": {
-    "path": "/data/projects/web/istanbulize/node_modules/bluebird/js/release/promise.js",
+  "file:///data/projects/web/istanbulize/node_modules/bluebird/js/release/promise.js": {
+    "path": "file:///data/projects/web/istanbulize/node_modules/bluebird/js/release/promise.js",
     "statementMap": {
       "s0": {
         "start": {
@@ -32703,8 +32574,8 @@
     "branchMap": {},
     "b": {}
   },
-  "/data/projects/web/istanbulize/node_modules/bluebird/js/release/promise_array.js": {
-    "path": "/data/projects/web/istanbulize/node_modules/bluebird/js/release/promise_array.js",
+  "file:///data/projects/web/istanbulize/node_modules/bluebird/js/release/promise_array.js": {
+    "path": "file:///data/projects/web/istanbulize/node_modules/bluebird/js/release/promise_array.js",
     "statementMap": {
       "s0": {
         "start": {
@@ -34453,8 +34324,8 @@
     "branchMap": {},
     "b": {}
   },
-  "/data/projects/web/istanbulize/node_modules/bluebird/js/release/promisify.js": {
-    "path": "/data/projects/web/istanbulize/node_modules/bluebird/js/release/promisify.js",
+  "file:///data/projects/web/istanbulize/node_modules/bluebird/js/release/promisify.js": {
+    "path": "file:///data/projects/web/istanbulize/node_modules/bluebird/js/release/promisify.js",
     "statementMap": {
       "s0": {
         "start": {
@@ -36694,8 +36565,8 @@
     "branchMap": {},
     "b": {}
   },
-  "/data/projects/web/istanbulize/node_modules/bluebird/js/release/props.js": {
-    "path": "/data/projects/web/istanbulize/node_modules/bluebird/js/release/props.js",
+  "file:///data/projects/web/istanbulize/node_modules/bluebird/js/release/props.js": {
+    "path": "file:///data/projects/web/istanbulize/node_modules/bluebird/js/release/props.js",
     "statementMap": {
       "s0": {
         "start": {
@@ -37904,8 +37775,8 @@
     "branchMap": {},
     "b": {}
   },
-  "/data/projects/web/istanbulize/node_modules/bluebird/js/release/queue.js": {
-    "path": "/data/projects/web/istanbulize/node_modules/bluebird/js/release/queue.js",
+  "file:///data/projects/web/istanbulize/node_modules/bluebird/js/release/queue.js": {
+    "path": "file:///data/projects/web/istanbulize/node_modules/bluebird/js/release/queue.js",
     "statementMap": {
       "s0": {
         "start": {
@@ -38695,8 +38566,8 @@
     "branchMap": {},
     "b": {}
   },
-  "/data/projects/web/istanbulize/node_modules/bluebird/js/release/race.js": {
-    "path": "/data/projects/web/istanbulize/node_modules/bluebird/js/release/race.js",
+  "file:///data/projects/web/istanbulize/node_modules/bluebird/js/release/race.js": {
+    "path": "file:///data/projects/web/istanbulize/node_modules/bluebird/js/release/race.js",
     "statementMap": {
       "s0": {
         "start": {
@@ -39180,8 +39051,8 @@
     "branchMap": {},
     "b": {}
   },
-  "/data/projects/web/istanbulize/node_modules/bluebird/js/release/reduce.js": {
-    "path": "/data/projects/web/istanbulize/node_modules/bluebird/js/release/reduce.js",
+  "file:///data/projects/web/istanbulize/node_modules/bluebird/js/release/reduce.js": {
+    "path": "file:///data/projects/web/istanbulize/node_modules/bluebird/js/release/reduce.js",
     "statementMap": {
       "s0": {
         "start": {
@@ -40663,8 +40534,8 @@
     "branchMap": {},
     "b": {}
   },
-  "/data/projects/web/istanbulize/node_modules/bluebird/js/release/schedule.js": {
-    "path": "/data/projects/web/istanbulize/node_modules/bluebird/js/release/schedule.js",
+  "file:///data/projects/web/istanbulize/node_modules/bluebird/js/release/schedule.js": {
+    "path": "file:///data/projects/web/istanbulize/node_modules/bluebird/js/release/schedule.js",
     "statementMap": {
       "s0": {
         "start": {
@@ -41471,8 +41342,8 @@
     "branchMap": {},
     "b": {}
   },
-  "/data/projects/web/istanbulize/node_modules/bluebird/js/release/settle.js": {
-    "path": "/data/projects/web/istanbulize/node_modules/bluebird/js/release/settle.js",
+  "file:///data/projects/web/istanbulize/node_modules/bluebird/js/release/settle.js": {
+    "path": "file:///data/projects/web/istanbulize/node_modules/bluebird/js/release/settle.js",
     "statementMap": {
       "s0": {
         "start": {
@@ -41992,8 +41863,8 @@
     "branchMap": {},
     "b": {}
   },
-  "/data/projects/web/istanbulize/node_modules/bluebird/js/release/some.js": {
-    "path": "/data/projects/web/istanbulize/node_modules/bluebird/js/release/some.js",
+  "file:///data/projects/web/istanbulize/node_modules/bluebird/js/release/some.js": {
+    "path": "file:///data/projects/web/istanbulize/node_modules/bluebird/js/release/some.js",
     "statementMap": {
       "s0": {
         "start": {
@@ -43501,8 +43372,8 @@
     "branchMap": {},
     "b": {}
   },
-  "/data/projects/web/istanbulize/node_modules/bluebird/js/release/synchronous_inspection.js": {
-    "path": "/data/projects/web/istanbulize/node_modules/bluebird/js/release/synchronous_inspection.js",
+  "file:///data/projects/web/istanbulize/node_modules/bluebird/js/release/synchronous_inspection.js": {
+    "path": "file:///data/projects/web/istanbulize/node_modules/bluebird/js/release/synchronous_inspection.js",
     "statementMap": {
       "s0": {
         "start": {
@@ -44658,8 +44529,8 @@
     "branchMap": {},
     "b": {}
   },
-  "/data/projects/web/istanbulize/node_modules/bluebird/js/release/thenables.js": {
-    "path": "/data/projects/web/istanbulize/node_modules/bluebird/js/release/thenables.js",
+  "file:///data/projects/web/istanbulize/node_modules/bluebird/js/release/thenables.js": {
+    "path": "file:///data/projects/web/istanbulize/node_modules/bluebird/js/release/thenables.js",
     "statementMap": {
       "s0": {
         "start": {
@@ -45501,8 +45372,8 @@
     "branchMap": {},
     "b": {}
   },
-  "/data/projects/web/istanbulize/node_modules/bluebird/js/release/timers.js": {
-    "path": "/data/projects/web/istanbulize/node_modules/bluebird/js/release/timers.js",
+  "file:///data/projects/web/istanbulize/node_modules/bluebird/js/release/timers.js": {
+    "path": "file:///data/projects/web/istanbulize/node_modules/bluebird/js/release/timers.js",
     "statementMap": {
       "s0": {
         "start": {
@@ -46433,8 +46304,8 @@
     "branchMap": {},
     "b": {}
   },
-  "/data/projects/web/istanbulize/node_modules/bluebird/js/release/using.js": {
-    "path": "/data/projects/web/istanbulize/node_modules/bluebird/js/release/using.js",
+  "file:///data/projects/web/istanbulize/node_modules/bluebird/js/release/using.js": {
+    "path": "file:///data/projects/web/istanbulize/node_modules/bluebird/js/release/using.js",
     "statementMap": {
       "s0": {
         "start": {
@@ -48592,8 +48463,8 @@
     "branchMap": {},
     "b": {}
   },
-  "/data/projects/web/istanbulize/node_modules/bluebird/js/release/util.js": {
-    "path": "/data/projects/web/istanbulize/node_modules/bluebird/js/release/util.js",
+  "file:///data/projects/web/istanbulize/node_modules/bluebird/js/release/util.js": {
+    "path": "file:///data/projects/web/istanbulize/node_modules/bluebird/js/release/util.js",
     "statementMap": {
       "s0": {
         "start": {
@@ -51595,6 +51466,135 @@
       "f38": 1,
       "f39": 0,
       "f40": 1
+    },
+    "branchMap": {},
+    "b": {}
+  },
+  "file:///main.js": {
+    "path": "file:///main.js",
+    "statementMap": {
+      "s0": {
+        "start": {
+          "line": 1,
+          "column": 0
+        },
+        "end": {
+          "line": 10,
+          "column": 3
+        }
+      },
+      "s1": {
+        "start": {
+          "line": 1,
+          "column": 62
+        },
+        "end": {
+          "line": 1,
+          "column": 99
+        }
+      },
+      "s2": {
+        "start": {
+          "line": 2,
+          "column": 0
+        },
+        "end": {
+          "line": 2,
+          "column": 25
+        }
+      },
+      "s3": {
+        "start": {
+          "line": 4,
+          "column": 0
+        },
+        "end": {
+          "line": 6,
+          "column": 3
+        }
+      },
+      "s4": {
+        "start": {
+          "line": 5,
+          "column": 2
+        },
+        "end": {
+          "line": 5,
+          "column": 35
+        }
+      },
+      "s5": {
+        "start": {
+          "line": 8,
+          "column": 0
+        },
+        "end": {
+          "line": 8,
+          "column": 30
+        }
+      }
+    },
+    "s": {
+      "s0": 1,
+      "s1": 1,
+      "s2": 1,
+      "s3": 1,
+      "s4": 1,
+      "s5": 1
+    },
+    "fnMap": {
+      "f0": {
+        "name": "",
+        "decl": {
+          "start": {
+            "line": 1,
+            "column": 1
+          },
+          "end": {
+            "line": 10,
+            "column": 1
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 1,
+            "column": 1
+          },
+          "end": {
+            "line": 10,
+            "column": 1
+          }
+        },
+        "line": 1
+      },
+      "f1": {
+        "name": "",
+        "decl": {
+          "start": {
+            "line": 4,
+            "column": 39
+          },
+          "end": {
+            "line": 6,
+            "column": 1
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 4,
+            "column": 39
+          },
+          "end": {
+            "line": 6,
+            "column": 1
+          }
+        },
+        "line": 4
+      }
+    },
+    "f": {
+      "f0": 1,
+      "f1": 1
     },
     "branchMap": {},
     "b": {}

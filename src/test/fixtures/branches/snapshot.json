@@ -1,6 +1,6 @@
 {
-  "/main.js": {
-    "path": "/main.js",
+  "file:///main.js": {
+    "path": "file:///main.js",
     "statementMap": {
       "s0": {
         "start": {

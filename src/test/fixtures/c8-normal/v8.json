@@ -1,10 +1,10 @@
 [
   {
     "sourceText": "(function (exports, require, module, __filename, __dirname) { require('./timeout')\n\nconsole.info('i am a line of code')\n\nfunction apple (awesome) {\n  if (false || true) {\n    console.info('what')\n  }\n  if (true || false) {\n    console.log('hey')\n  }\n}\n\nfunction missed () {\n  \n}\n\napple()\napple()\napple()\n\n});",
-    "sourceType": "script",
+    "sourceType": "module",
     "scriptCov": {
-      "scriptId": "63",
-      "url": "/main.js",
+      "scriptId": "64",
+      "url": "file:///main.js",
       "functions": [
         {
           "functionName": "",
@@ -60,10 +60,10 @@
   },
   {
     "sourceText": "(function (exports, require, module, __filename, __dirname) { const a = 'apple' ? 'banana' : 'grape'\n\nfunction cool () {\n\n}\n\nfunction awesome () {\n  console.log('hey')\n}\nawesome()\n\nsetTimeout(() => {\n  cool()\n}, 500)\n\n});",
-    "sourceType": "script",
+    "sourceType": "module",
     "scriptCov": {
-      "scriptId": "64",
-      "url": "/timeout.js",
+      "scriptId": "65",
+      "url": "file:///timeout.js",
       "functions": [
         {
           "functionName": "",

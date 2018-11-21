@@ -38,7 +38,7 @@ export interface IstambulizeScriptOptions {
 
 export type WrapperLike = [string | number, string | number];
 
-export interface istanbulizeOptions extends IstambulizeScriptOptions {
+export interface IstanbulizeOptions extends IstambulizeScriptOptions {
   scriptCov: ScriptCov;
 }
 
@@ -47,7 +47,7 @@ type FunctionLike = FunctionNode | Program;
 /**
  * Converts a V8 ScriptCoverage object to an Istanbul FileCoverage data object.
  */
-export function istanbulize(options: Readonly<istanbulizeOptions>): IstanbulFileCoverageData {
+export function istanbulize(options: Readonly<IstanbulizeOptions>): IstanbulFileCoverageData {
   const script: IstambulizeScript = new IstambulizeScript(options);
   script.add(options.scriptCov);
   return script.toIstanbul();
@@ -77,23 +77,23 @@ export class IstambulizeScript {
     this.functionCounts = new Map();
     this.statementCounts = new Map();
 
-    babelTraverse(this.ast, {
+    babelTraverse(this.ast as any, {
       enter: (path: NodePath) => {
         if (path.isFunction() || path.isProgram()) {
-          this.roots.add(path.node);
+          this.roots.add(path.node as any);
           (path.node as any)[ROOT_SYMBOL] = path.node;
         } else {
-          const parent: Node | undefined = path.parent;
+          const parent: Node | undefined = path.parent as any;
           const parentRoot: Node | undefined = parent !== undefined ? ((parent as any)[ROOT_SYMBOL]) : undefined;
           if (parentRoot !== undefined) {
             (path.node as any)[ROOT_SYMBOL] = parentRoot;
           }
         }
         if (path.isFunction()) {
-          this.functionCounts.set(path.node, 0);
+          this.functionCounts.set(path.node as any, 0);
         }
         if (path.isStatement() && !(path.isBlockStatement() || path.isFunctionDeclaration())) {
-          this.statementCounts.set(path.node, 0);
+          this.statementCounts.set(path.node as any, 0);
         }
       },
     });
