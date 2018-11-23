@@ -1,9 +1,9 @@
 [
   {
     "sourceText": "(function (exports, require, module, __filename, __dirname) { // basic binary operation.\nconst a = 99 || 33\n\n// basic conditional operation.\nconst b = false ? 'hello' : 'goodbye'\n\n// nary operation.\nconst c = a && b && false && 33\n\n// if statement.\nif (false) {\n  const d = 99\n}\n  else {\n    console.info('hello')\n  }\n\n// if statement in function.\nfunction e () {\n  if (true) {\n    console.info('hey')\n  } else {\n    const f = 99\n  }\n}\n\ne()\n\n// binary operation that spans multiple lines.\nconst g = 99 &&\n  33 || 13\n\n});",
-    "sourceType": "module",
+    "sourceType": "script",
     "scriptCov": {
-      "scriptId": "64",
+      "scriptId": "328",
       "url": "file:///main.js",
       "functions": [
         {

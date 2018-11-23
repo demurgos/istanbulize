@@ -1,9 +1,9 @@
 [
   {
     "sourceText": "(function (exports, require, module, __filename, __dirname) { function getParity (x) {\n  return x % 2 === 0 ? 'even' : 'odd'\n}\n\ngetParity(0)\ngetParity(1)\ngetParity(2)\ngetParity(3)\n\n});",
-    "sourceType": "module",
+    "sourceType": "script",
     "scriptCov": {
-      "scriptId": "64",
+      "scriptId": "328",
       "url": "file:///main.js",
       "functions": [
         {

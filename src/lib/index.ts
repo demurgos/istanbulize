@@ -2,7 +2,6 @@ import { parse as babelParse } from "@babel/parser";
 import babelTraverse, { NodePath } from "@babel/traverse";
 import { File, Function as FunctionNode, Node, Program, SourceLocation, Statement } from "@babel/types";
 import { FunctionCov, RangeCov, ScriptCov } from "@c88/v8-coverage";
-import Protocol from "devtools-protocol";
 import Module from "module";
 import {
   IstanbulBranch,
@@ -13,6 +12,7 @@ import {
   IstanbulStatementCoverageData,
 } from "./types";
 
+export { ScriptCov, FunctionCov, RangeCov } from "@c88/v8-coverage";
 export {
   IstanbulBranch,
   IstanbulBranchCoverageData,
@@ -21,7 +21,6 @@ export {
   IstanbulFunction,
   IstanbulStatementCoverageData,
 } from "./types";
-export { ScriptCov, FunctionCov, RangeCov } from "@c88/v8-coverage";
 
 export enum SourceType {
   Script = "script",
@@ -284,7 +283,7 @@ interface CovBlock {
   node: Node;
   scope: any;
   path: any;
-  v8: Protocol.Profiler.FunctionCoverage;
+  v8: FunctionCov;
   isFunction: boolean;
 }
 

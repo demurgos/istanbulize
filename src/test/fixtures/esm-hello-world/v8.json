@@ -3,7 +3,7 @@
     "sourceText": "export function helloWorld () {\n  console.log('Hello, World!')\n}\n",
     "sourceType": "module",
     "scriptCov": {
-      "scriptId": "77",
+      "scriptId": "833",
       "url": "file:///hello-world.mjs",
       "functions": [
         {
@@ -33,9 +33,9 @@
   },
   {
     "sourceText": "(function (exports, require, module, __filename, __dirname) { import('./hello-world')\n  .then(helloWorld => helloWorld.helloWorld())\n\n});",
-    "sourceType": "module",
+    "sourceType": "script",
     "scriptCov": {
-      "scriptId": "75",
+      "scriptId": "831",
       "url": "file:///main.js",
       "functions": [
         {
