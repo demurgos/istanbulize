@@ -1,11 +1,11 @@
 import { ScriptCov } from "@c88/v8-coverage";
 import assert from "assert";
+import { ModuleInfo } from "c88/filter";
 import { SourcedScriptCov, spawnInspected } from "c88/spawn-inspected";
 import fs from "fs";
 import * as furi from "furi";
 import { parseSys as parseNodeScriptUrl, ScriptUrl } from "node-script-url";
 import sysPath from "path";
-import { ModuleInfo } from "c88/filter";
 
 async function main(): Promise<void> {
   for await (const fixture of getFixtures()) {
@@ -19,7 +19,8 @@ interface Fixture {
   output: string;
 }
 
-const CJS_BRIDGE = "\n  import {\n    executor,\n    $default\n  } from \"\";\n  export {\n    $default as default\n  }\n  if (typeof executor === \"function\") {\n    // add await to this later if top level await comes along\n    executor()\n  }";
+// https://github.com/nodejs/node/blob/966a2df0f620cfe59e6ce2b161ff8bf7446b46ee/lib/internal/modules/esm/create_dynamic_module.js#L14
+const CJS_FACADE: RegExp = /import\.meta\.exports\.[\s\S]*import\.meta\.done()/;
 
 async function* getFixtures(): AsyncIterable<Fixture> {
   const projectRoot = sysPath.resolve(__dirname, "..");
@@ -83,7 +84,7 @@ function normalizeData(
   const result: FixtureData[] = [];
   const baseDirUrl: string = furi.fromSysPath(baseDir).href;
   for (const scriptCov of scriptCovs) {
-    if (scriptCov.url === "" || scriptCov.sourceText === CJS_BRIDGE) {
+    if (scriptCov.url === "" || CJS_FACADE.test(scriptCov.sourceText)) {
       continue;
     }
     const urlInfo: ScriptUrl = parseNodeScriptUrl(scriptCov.url);

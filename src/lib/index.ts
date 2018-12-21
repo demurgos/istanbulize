@@ -68,7 +68,7 @@ export class IstambulizeScript {
       options.sourceText,
       {
         sourceType: options.sourceType,
-        plugins: ["dynamicImport"],
+        plugins: ["dynamicImport", "importMeta"],
       },
     );
     this.roots = new Set();

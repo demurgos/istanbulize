@@ -1,0 +1,147 @@
+{
+  "file:///import-meta.mjs": {
+    "path": "file:///import-meta.mjs",
+    "statementMap": {
+      "s0": {
+        "start": {
+          "line": 1,
+          "column": 0
+        },
+        "end": {
+          "line": 3,
+          "column": 1
+        }
+      },
+      "s1": {
+        "start": {
+          "line": 2,
+          "column": 2
+        },
+        "end": {
+          "line": 2,
+          "column": 26
+        }
+      }
+    },
+    "s": {
+      "s0": 2,
+      "s1": 1
+    },
+    "fnMap": {
+      "f0": {
+        "name": "importMeta",
+        "decl": {
+          "start": {
+            "line": 1,
+            "column": 7
+          },
+          "end": {
+            "line": 3,
+            "column": 1
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 1,
+            "column": 7
+          },
+          "end": {
+            "line": 3,
+            "column": 1
+          }
+        },
+        "line": 1
+      }
+    },
+    "f": {
+      "f0": 1
+    },
+    "branchMap": {},
+    "b": {}
+  },
+  "file:///main.js": {
+    "path": "file:///main.js",
+    "statementMap": {
+      "s0": {
+        "start": {
+          "line": 1,
+          "column": 0
+        },
+        "end": {
+          "line": 4,
+          "column": 3
+        }
+      },
+      "s1": {
+        "start": {
+          "line": 1,
+          "column": 62
+        },
+        "end": {
+          "line": 2,
+          "column": 39
+        }
+      }
+    },
+    "s": {
+      "s0": 1,
+      "s1": 1
+    },
+    "fnMap": {
+      "f0": {
+        "name": "",
+        "decl": {
+          "start": {
+            "line": 1,
+            "column": 1
+          },
+          "end": {
+            "line": 4,
+            "column": 1
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 1,
+            "column": 1
+          },
+          "end": {
+            "line": 4,
+            "column": 1
+          }
+        },
+        "line": 1
+      },
+      "f1": {
+        "name": "then",
+        "decl": {
+          "start": {
+            "line": 2,
+            "column": 8
+          },
+          "end": {
+            "line": 2,
+            "column": 38
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 2,
+            "column": 8
+          },
+          "end": {
+            "line": 2,
+            "column": 38
+          }
+        },
+        "line": 2
+      }
+    },
+    "f": {
+      "f0": 1,
+      "f1": 1
+    },
+    "branchMap": {},
+    "b": {}
+  }
+}
