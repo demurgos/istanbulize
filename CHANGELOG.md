@@ -1,4 +1,4 @@
-# Next
+## 0.1.2 (2018-12-21)
 
 - **[Fix]** Add support for `import.meta`.
 
