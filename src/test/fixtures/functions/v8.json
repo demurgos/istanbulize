@@ -1,9 +1,9 @@
 [
   {
-    "sourceText": "(function (exports, require, module, __filename, __dirname) { // function that's not called.\nfunction a() {\n  if (x == 42) {\n    if (x == 43) b(); else c();\n  }\n}\n\n// function that's called once.\n  function b () {\n    const i = a ? 'hello' : 'goodbye'\n    const ii = a && b\n    const iii = a || 33\n    return ii\n  }\n\nb()\n\n// function that's called multiple times.\nconst c = () => {\n  const i = 22\n  const ii = i &&\n    99\n}\n\nc(); c()\n\n// class that never has member functions called.\nclass Foo {\n  constructor () {\n    this.test = 99\n  }\n  hello () {\n    console.info('hello')\n  }\n}\n\n// class that has member functions called.\n  class Bar {\n    constructor () {\n      this.test = 99\n    }\n    hello () {\n      console.info(`Hello ${this.test}`)\n    }\n  }\n\nconst d = new Bar()\nd.hello()\n\n});",
+    "sourceText": "// function that's not called.\nfunction a() {\n  if (x == 42) {\n    if (x == 43) b(); else c();\n  }\n}\n\n// function that's called once.\n  function b () {\n    const i = a ? 'hello' : 'goodbye'\n    const ii = a && b\n    const iii = a || 33\n    return ii\n  }\n\nb()\n\n// function that's called multiple times.\nconst c = () => {\n  const i = 22\n  const ii = i &&\n    99\n}\n\nc(); c()\n\n// class that never has member functions called.\nclass Foo {\n  constructor () {\n    this.test = 99\n  }\n  hello () {\n    console.info('hello')\n  }\n}\n\n// class that has member functions called.\n  class Bar {\n    constructor () {\n      this.test = 99\n    }\n    hello () {\n      console.info(`Hello ${this.test}`)\n    }\n  }\n\nconst d = new Bar()\nd.hello()\n",
     "sourceType": "script",
     "scriptCov": {
-      "scriptId": "328",
+      "scriptId": "335",
       "url": "file:///main.js",
       "functions": [
         {
@@ -11,18 +11,7 @@
           "ranges": [
             {
               "startOffset": 0,
-              "endOffset": 790,
-              "count": 1
-            }
-          ],
-          "isBlockCoverage": true
-        },
-        {
-          "functionName": "",
-          "ranges": [
-            {
-              "startOffset": 1,
-              "endOffset": 788,
+              "endOffset": 724,
               "count": 1
             }
           ],
@@ -32,8 +21,8 @@
           "functionName": "a",
           "ranges": [
             {
-              "startOffset": 93,
-              "endOffset": 162,
+              "startOffset": 31,
+              "endOffset": 100,
               "count": 0
             }
           ],
@@ -43,23 +32,18 @@
           "functionName": "b",
           "ranges": [
             {
-              "startOffset": 198,
-              "endOffset": 315,
+              "startOffset": 136,
+              "endOffset": 253,
               "count": 1
             },
             {
-              "startOffset": 240,
-              "endOffset": 251,
+              "startOffset": 178,
+              "endOffset": 189,
               "count": 0
             },
             {
-              "startOffset": 292,
-              "endOffset": 297,
-              "count": 0
-            },
-            {
-              "startOffset": 311,
-              "endOffset": 314,
+              "startOffset": 230,
+              "endOffset": 235,
               "count": 0
             }
           ],
@@ -69,8 +53,8 @@
           "functionName": "c",
           "ranges": [
             {
-              "startOffset": 374,
-              "endOffset": 423,
+              "startOffset": 312,
+              "endOffset": 361,
               "count": 2
             }
           ],
@@ -80,8 +64,8 @@
           "functionName": "Foo",
           "ranges": [
             {
-              "startOffset": 498,
-              "endOffset": 537,
+              "startOffset": 436,
+              "endOffset": 475,
               "count": 0
             }
           ],
@@ -91,8 +75,8 @@
           "functionName": "hello",
           "ranges": [
             {
-              "startOffset": 540,
-              "endOffset": 580,
+              "startOffset": 478,
+              "endOffset": 518,
               "count": 0
             }
           ],
@@ -102,8 +86,8 @@
           "functionName": "Bar",
           "ranges": [
             {
-              "startOffset": 645,
-              "endOffset": 688,
+              "startOffset": 583,
+              "endOffset": 626,
               "count": 1
             }
           ],
@@ -113,8 +97,8 @@
           "functionName": "hello",
           "ranges": [
             {
-              "startOffset": 693,
-              "endOffset": 750,
+              "startOffset": 631,
+              "endOffset": 688,
               "count": 1
             }
           ],

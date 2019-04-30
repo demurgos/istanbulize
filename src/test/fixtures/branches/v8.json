@@ -1,9 +1,9 @@
 [
   {
-    "sourceText": "(function (exports, require, module, __filename, __dirname) { // basic binary operation.\nconst a = 99 || 33\n\n// basic conditional operation.\nconst b = false ? 'hello' : 'goodbye'\n\n// nary operation.\nconst c = a && b && false && 33\n\n// if statement.\nif (false) {\n  const d = 99\n}\n  else {\n    console.info('hello')\n  }\n\n// if statement in function.\nfunction e () {\n  if (true) {\n    console.info('hey')\n  } else {\n    const f = 99\n  }\n}\n\ne()\n\n// binary operation that spans multiple lines.\nconst g = 99 &&\n  33 || 13\n\n});",
+    "sourceText": "// basic binary operation.\nconst a = 99 || 33\n\n// basic conditional operation.\nconst b = false ? 'hello' : 'goodbye'\n\n// nary operation.\nconst c = a && b && false && 33\n\n// if statement.\nif (false) {\n  const d = 99\n}\n  else {\n    console.info('hello')\n  }\n\n// if statement in function.\nfunction e () {\n  if (true) {\n    console.info('hey')\n  } else {\n    const f = 99\n  }\n}\n\ne()\n\n// binary operation that spans multiple lines.\nconst g = 99 &&\n  33 || 13\n",
     "sourceType": "script",
     "scriptCov": {
-      "scriptId": "328",
+      "scriptId": "335",
       "url": "file:///main.js",
       "functions": [
         {
@@ -11,43 +11,32 @@
           "ranges": [
             {
               "startOffset": 0,
-              "endOffset": 520,
-              "count": 1
-            }
-          ],
-          "isBlockCoverage": true
-        },
-        {
-          "functionName": "",
-          "ranges": [
-            {
-              "startOffset": 1,
-              "endOffset": 518,
+              "endOffset": 454,
               "count": 1
             },
             {
-              "startOffset": 102,
-              "endOffset": 107,
+              "startOffset": 40,
+              "endOffset": 45,
               "count": 0
             },
             {
-              "startOffset": 157,
-              "endOffset": 166,
+              "startOffset": 95,
+              "endOffset": 104,
               "count": 0
             },
             {
-              "startOffset": 225,
-              "endOffset": 230,
+              "startOffset": 163,
+              "endOffset": 168,
               "count": 0
             },
             {
-              "startOffset": 260,
-              "endOffset": 278,
+              "startOffset": 198,
+              "endOffset": 216,
               "count": 0
             },
             {
-              "startOffset": 510,
-              "endOffset": 515,
+              "startOffset": 448,
+              "endOffset": 453,
               "count": 0
             }
           ],
@@ -57,13 +46,13 @@
           "functionName": "e",
           "ranges": [
             {
-              "startOffset": 348,
-              "endOffset": 435,
+              "startOffset": 286,
+              "endOffset": 373,
               "count": 1
             },
             {
-              "startOffset": 405,
-              "endOffset": 433,
+              "startOffset": 343,
+              "endOffset": 371,
               "count": 0
             }
           ],

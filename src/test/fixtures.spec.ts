@@ -95,5 +95,5 @@ async function getSnapshot(fixtureName: string, url: string): Promise<IstanbulFi
 async function setSnapshot(fixtureName: string, data: Record<string, IstanbulFileCoverageData>): Promise<void> {
   const fixtureDir = path.resolve(FIXTURES_DIR, fixtureName);
   const snapshotPath: string = path.resolve(fixtureDir, "snapshot.json");
-  fs.writeFileSync(snapshotPath, JSON.stringify(data, null, 2), {encoding: "UTF-8"});
+  fs.writeFileSync(snapshotPath, `${JSON.stringify(data, null, 2)}\n`, {encoding: "UTF-8"});
 }

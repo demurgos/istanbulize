@@ -131,8 +131,9 @@ export class IstambulizeScript {
   }
 
   private getStatements<S extends keyof any = keyof any>(): IstanbulStatementCoverageData<S> {
-    const statementMap: Record<S, SourceLocation> = Object.create(null);
-    const s: Record<S, number> = Object.create(null);
+    // TODO: Use `Record<S, ...>`
+    const statementMap: Record<keyof any, SourceLocation> = Object.create(null);
+    const s: Record<keyof any, number> = Object.create(null);
 
     let i: number = 0;
     for (const [statementNode, count] of this.statementCounts) {
@@ -147,8 +148,9 @@ export class IstambulizeScript {
   }
 
   private getFunctions<F extends keyof any = keyof any>(): IstanbulFnCoverageData<F> {
-    const fnMap: Record<F, IstanbulFunction> = Object.create(null);
-    const f: Record<F, number> = Object.create(null);
+    // TODO: Use `Record<F, ...>`
+    const fnMap: Record<keyof any, IstanbulFunction> = Object.create(null);
+    const f: Record<keyof any, number> = Object.create(null);
 
     let i: number = 0;
     for (const [funcNode, count] of this.functionCounts) {

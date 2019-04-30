@@ -1,10 +1,10 @@
 import { ScriptCov } from "@c88/v8-coverage";
 import assert from "assert";
 import { ModuleInfo } from "c88/filter";
-import { SourcedScriptCov, spawnInspected } from "c88/spawn-inspected";
+import { RichScriptCov, spawnInspected } from "c88/spawn-inspected";
 import fs from "fs";
 import * as furi from "furi";
-import { parseSys as parseNodeScriptUrl, ScriptUrl } from "node-script-url";
+import { ParsedScriptUrl, parseSys as parseNodeScriptUrl } from "node-script-url";
 import sysPath from "path";
 
 async function main(): Promise<void> {
@@ -78,7 +78,7 @@ async function writeJson(p: string, data: any): Promise<void> {
 }
 
 function normalizeData(
-  scriptCovs: ReadonlyArray<SourcedScriptCov>,
+  scriptCovs: ReadonlyArray<RichScriptCov>,
   baseDir: string,
 ): FixtureData[] {
   const result: FixtureData[] = [];
@@ -87,8 +87,8 @@ function normalizeData(
     if (scriptCov.url === "" || CJS_FACADE.test(scriptCov.sourceText)) {
       continue;
     }
-    const urlInfo: ScriptUrl = parseNodeScriptUrl(scriptCov.url);
-    if (urlInfo.isRegularFile) {
+    const urlInfo: ParsedScriptUrl = parseNodeScriptUrl(scriptCov.url);
+    if (urlInfo.isFileUrl) {
       const url: string = tryChangeFileUrlRoot(baseDirUrl, urlInfo.url);
       result.push({
         sourceText: scriptCov.sourceText,

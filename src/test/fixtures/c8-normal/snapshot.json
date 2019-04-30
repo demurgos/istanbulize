@@ -8,21 +8,11 @@
           "column": 0
         },
         "end": {
-          "line": 22,
-          "column": 3
+          "line": 1,
+          "column": 20
         }
       },
       "s1": {
-        "start": {
-          "line": 1,
-          "column": 62
-        },
-        "end": {
-          "line": 1,
-          "column": 82
-        }
-      },
-      "s2": {
         "start": {
           "line": 3,
           "column": 0
@@ -32,7 +22,7 @@
           "column": 35
         }
       },
-      "s3": {
+      "s2": {
         "start": {
           "line": 6,
           "column": 2
@@ -42,7 +32,7 @@
           "column": 3
         }
       },
-      "s4": {
+      "s3": {
         "start": {
           "line": 7,
           "column": 4
@@ -52,7 +42,7 @@
           "column": 24
         }
       },
-      "s5": {
+      "s4": {
         "start": {
           "line": 9,
           "column": 2
@@ -62,7 +52,7 @@
           "column": 3
         }
       },
-      "s6": {
+      "s5": {
         "start": {
           "line": 10,
           "column": 4
@@ -72,27 +62,27 @@
           "column": 22
         }
       },
-      "s7": {
+      "s6": {
         "start": {
           "line": 18,
           "column": 0
         },
         "end": {
           "line": 18,
+          "column": 7
+        }
+      },
+      "s7": {
+        "start": {
+          "line": 19,
+          "column": 0
+        },
+        "end": {
+          "line": 19,
           "column": 7
         }
       },
       "s8": {
-        "start": {
-          "line": 19,
-          "column": 0
-        },
-        "end": {
-          "line": 19,
-          "column": 7
-        }
-      },
-      "s9": {
         "start": {
           "line": 20,
           "column": 0
@@ -106,41 +96,16 @@
     "s": {
       "s0": 1,
       "s1": 1,
-      "s2": 1,
+      "s2": 3,
       "s3": 3,
       "s4": 3,
       "s5": 3,
-      "s6": 3,
+      "s6": 1,
       "s7": 1,
-      "s8": 1,
-      "s9": 1
+      "s8": 1
     },
     "fnMap": {
       "f0": {
-        "name": "",
-        "decl": {
-          "start": {
-            "line": 1,
-            "column": 1
-          },
-          "end": {
-            "line": 22,
-            "column": 1
-          }
-        },
-        "loc": {
-          "start": {
-            "line": 1,
-            "column": 1
-          },
-          "end": {
-            "line": 22,
-            "column": 1
-          }
-        },
-        "line": 1
-      },
-      "f1": {
         "name": "apple",
         "decl": {
           "start": {
@@ -164,7 +129,7 @@
         },
         "line": 5
       },
-      "f2": {
+      "f1": {
         "name": "missed",
         "decl": {
           "start": {
@@ -190,9 +155,8 @@
       }
     },
     "f": {
-      "f0": 1,
-      "f1": 3,
-      "f2": 0
+      "f0": 3,
+      "f1": 0
     },
     "branchMap": {},
     "b": {}
@@ -206,21 +170,11 @@
           "column": 0
         },
         "end": {
-          "line": 16,
-          "column": 3
+          "line": 1,
+          "column": 38
         }
       },
       "s1": {
-        "start": {
-          "line": 1,
-          "column": 62
-        },
-        "end": {
-          "line": 1,
-          "column": 100
-        }
-      },
-      "s2": {
         "start": {
           "line": 8,
           "column": 2
@@ -230,7 +184,7 @@
           "column": 20
         }
       },
-      "s3": {
+      "s2": {
         "start": {
           "line": 10,
           "column": 0
@@ -240,7 +194,7 @@
           "column": 9
         }
       },
-      "s4": {
+      "s3": {
         "start": {
           "line": 12,
           "column": 0
@@ -250,7 +204,7 @@
           "column": 7
         }
       },
-      "s5": {
+      "s4": {
         "start": {
           "line": 13,
           "column": 2
@@ -266,35 +220,10 @@
       "s1": 1,
       "s2": 1,
       "s3": 1,
-      "s4": 1,
-      "s5": 1
+      "s4": 1
     },
     "fnMap": {
       "f0": {
-        "name": "",
-        "decl": {
-          "start": {
-            "line": 1,
-            "column": 1
-          },
-          "end": {
-            "line": 16,
-            "column": 1
-          }
-        },
-        "loc": {
-          "start": {
-            "line": 1,
-            "column": 1
-          },
-          "end": {
-            "line": 16,
-            "column": 1
-          }
-        },
-        "line": 1
-      },
-      "f1": {
         "name": "cool",
         "decl": {
           "start": {
@@ -318,7 +247,7 @@
         },
         "line": 3
       },
-      "f2": {
+      "f1": {
         "name": "awesome",
         "decl": {
           "start": {
@@ -342,8 +271,8 @@
         },
         "line": 7
       },
-      "f3": {
-        "name": "setTimeout",
+      "f2": {
+        "name": "",
         "decl": {
           "start": {
             "line": 12,
@@ -370,8 +299,7 @@
     "f": {
       "f0": 1,
       "f1": 1,
-      "f2": 1,
-      "f3": 1
+      "f2": 1
     },
     "branchMap": {},
     "b": {}

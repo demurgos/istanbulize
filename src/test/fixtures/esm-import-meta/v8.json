@@ -1,41 +1,9 @@
 [
   {
-    "sourceText": "export function importMeta () {\n  console.log(import.meta)\n}\n",
-    "sourceType": "module",
-    "scriptCov": {
-      "scriptId": "586",
-      "url": "file:///import-meta.mjs",
-      "functions": [
-        {
-          "functionName": "",
-          "ranges": [
-            {
-              "startOffset": 0,
-              "endOffset": 61,
-              "count": 2
-            }
-          ],
-          "isBlockCoverage": true
-        },
-        {
-          "functionName": "importMeta",
-          "ranges": [
-            {
-              "startOffset": 7,
-              "endOffset": 60,
-              "count": 1
-            }
-          ],
-          "isBlockCoverage": true
-        }
-      ]
-    }
-  },
-  {
-    "sourceText": "(function (exports, require, module, __filename, __dirname) { import('./import-meta')\n  .then(({importMeta}) => importMeta())\n\n});",
+    "sourceText": "import('./import-meta')\n  .then(({importMeta}) => importMeta())\n",
     "sourceType": "script",
     "scriptCov": {
-      "scriptId": "584",
+      "scriptId": "590",
       "url": "file:///main.js",
       "functions": [
         {
@@ -43,7 +11,7 @@
           "ranges": [
             {
               "startOffset": 0,
-              "endOffset": 130,
+              "endOffset": 64,
               "count": 1
             }
           ],
@@ -53,23 +21,12 @@
           "functionName": "",
           "ranges": [
             {
-              "startOffset": 1,
-              "endOffset": 128,
-              "count": 1
+              "startOffset": 32,
+              "endOffset": 62,
+              "count": 0
             }
           ],
-          "isBlockCoverage": true
-        },
-        {
-          "functionName": "then",
-          "ranges": [
-            {
-              "startOffset": 94,
-              "endOffset": 124,
-              "count": 1
-            }
-          ],
-          "isBlockCoverage": true
+          "isBlockCoverage": false
         }
       ]
     }

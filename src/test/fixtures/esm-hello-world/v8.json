@@ -1,41 +1,9 @@
 [
   {
-    "sourceText": "export function helloWorld () {\n  console.log('Hello, World!')\n}\n",
-    "sourceType": "module",
-    "scriptCov": {
-      "scriptId": "586",
-      "url": "file:///hello-world.mjs",
-      "functions": [
-        {
-          "functionName": "",
-          "ranges": [
-            {
-              "startOffset": 0,
-              "endOffset": 65,
-              "count": 2
-            }
-          ],
-          "isBlockCoverage": true
-        },
-        {
-          "functionName": "helloWorld",
-          "ranges": [
-            {
-              "startOffset": 7,
-              "endOffset": 64,
-              "count": 1
-            }
-          ],
-          "isBlockCoverage": true
-        }
-      ]
-    }
-  },
-  {
-    "sourceText": "(function (exports, require, module, __filename, __dirname) { import('./hello-world')\n  .then(helloWorld => helloWorld.helloWorld())\n\n});",
+    "sourceText": "import('./hello-world')\n  .then(helloWorld => helloWorld.helloWorld())\n",
     "sourceType": "script",
     "scriptCov": {
-      "scriptId": "584",
+      "scriptId": "590",
       "url": "file:///main.js",
       "functions": [
         {
@@ -43,7 +11,7 @@
           "ranges": [
             {
               "startOffset": 0,
-              "endOffset": 137,
+              "endOffset": 71,
               "count": 1
             }
           ],
@@ -53,23 +21,12 @@
           "functionName": "",
           "ranges": [
             {
-              "startOffset": 1,
-              "endOffset": 135,
-              "count": 1
+              "startOffset": 32,
+              "endOffset": 69,
+              "count": 0
             }
           ],
-          "isBlockCoverage": true
-        },
-        {
-          "functionName": "then.helloWorld",
-          "ranges": [
-            {
-              "startOffset": 94,
-              "endOffset": 131,
-              "count": 1
-            }
-          ],
-          "isBlockCoverage": true
+          "isBlockCoverage": false
         }
       ]
     }

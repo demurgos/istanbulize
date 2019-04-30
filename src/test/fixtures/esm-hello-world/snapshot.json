@@ -1,64 +1,4 @@
 {
-  "file:///hello-world.mjs": {
-    "path": "file:///hello-world.mjs",
-    "statementMap": {
-      "s0": {
-        "start": {
-          "line": 1,
-          "column": 0
-        },
-        "end": {
-          "line": 3,
-          "column": 1
-        }
-      },
-      "s1": {
-        "start": {
-          "line": 2,
-          "column": 2
-        },
-        "end": {
-          "line": 2,
-          "column": 30
-        }
-      }
-    },
-    "s": {
-      "s0": 2,
-      "s1": 1
-    },
-    "fnMap": {
-      "f0": {
-        "name": "helloWorld",
-        "decl": {
-          "start": {
-            "line": 1,
-            "column": 7
-          },
-          "end": {
-            "line": 3,
-            "column": 1
-          }
-        },
-        "loc": {
-          "start": {
-            "line": 1,
-            "column": 7
-          },
-          "end": {
-            "line": 3,
-            "column": 1
-          }
-        },
-        "line": 1
-      }
-    },
-    "f": {
-      "f0": 1
-    },
-    "branchMap": {},
-    "b": {}
-  },
   "file:///main.js": {
     "path": "file:///main.js",
     "statementMap": {
@@ -68,52 +8,17 @@
           "column": 0
         },
         "end": {
-          "line": 4,
-          "column": 3
-        }
-      },
-      "s1": {
-        "start": {
-          "line": 1,
-          "column": 62
-        },
-        "end": {
           "line": 2,
           "column": 46
         }
       }
     },
     "s": {
-      "s0": 1,
-      "s1": 1
+      "s0": 1
     },
     "fnMap": {
       "f0": {
         "name": "",
-        "decl": {
-          "start": {
-            "line": 1,
-            "column": 1
-          },
-          "end": {
-            "line": 4,
-            "column": 1
-          }
-        },
-        "loc": {
-          "start": {
-            "line": 1,
-            "column": 1
-          },
-          "end": {
-            "line": 4,
-            "column": 1
-          }
-        },
-        "line": 1
-      },
-      "f1": {
-        "name": "then.helloWorld",
         "decl": {
           "start": {
             "line": 2,
@@ -138,8 +43,7 @@
       }
     },
     "f": {
-      "f0": 1,
-      "f1": 1
+      "f0": 0
     },
     "branchMap": {},
     "b": {}

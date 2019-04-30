@@ -1,9 +1,9 @@
 [
   {
-    "sourceText": "(function (exports, require, module, __filename, __dirname) { require('./timeout')\n\nconsole.info('i am a line of code')\n\nfunction apple (awesome) {\n  if (false || true) {\n    console.info('what')\n  }\n  if (true || false) {\n    console.log('hey')\n  }\n}\n\nfunction missed () {\n  \n}\n\napple()\napple()\napple()\n\n});",
+    "sourceText": "require('./timeout')\n\nconsole.info('i am a line of code')\n\nfunction apple (awesome) {\n  if (false || true) {\n    console.info('what')\n  }\n  if (true || false) {\n    console.log('hey')\n  }\n}\n\nfunction missed () {\n  \n}\n\napple()\napple()\napple()\n",
     "sourceType": "script",
     "scriptCov": {
-      "scriptId": "328",
+      "scriptId": "335",
       "url": "file:///main.js",
       "functions": [
         {
@@ -11,18 +11,7 @@
           "ranges": [
             {
               "startOffset": 0,
-              "endOffset": 308,
-              "count": 1
-            }
-          ],
-          "isBlockCoverage": true
-        },
-        {
-          "functionName": "",
-          "ranges": [
-            {
-              "startOffset": 1,
-              "endOffset": 306,
+              "endOffset": 242,
               "count": 1
             }
           ],
@@ -32,13 +21,13 @@
           "functionName": "apple",
           "ranges": [
             {
-              "startOffset": 121,
-              "endOffset": 251,
+              "startOffset": 59,
+              "endOffset": 189,
               "count": 3
             },
             {
-              "startOffset": 211,
-              "endOffset": 219,
+              "startOffset": 149,
+              "endOffset": 157,
               "count": 0
             }
           ],
@@ -48,8 +37,8 @@
           "functionName": "missed",
           "ranges": [
             {
-              "startOffset": 253,
-              "endOffset": 278,
+              "startOffset": 191,
+              "endOffset": 216,
               "count": 0
             }
           ],
@@ -59,10 +48,10 @@
     }
   },
   {
-    "sourceText": "(function (exports, require, module, __filename, __dirname) { const a = 'apple' ? 'banana' : 'grape'\n\nfunction cool () {\n\n}\n\nfunction awesome () {\n  console.log('hey')\n}\nawesome()\n\nsetTimeout(() => {\n  cool()\n}, 500)\n\n});",
+    "sourceText": "const a = 'apple' ? 'banana' : 'grape'\n\nfunction cool () {\n\n}\n\nfunction awesome () {\n  console.log('hey')\n}\nawesome()\n\nsetTimeout(() => {\n  cool()\n}, 500)\n",
     "sourceType": "script",
     "scriptCov": {
-      "scriptId": "329",
+      "scriptId": "336",
       "url": "file:///timeout.js",
       "functions": [
         {
@@ -70,23 +59,12 @@
           "ranges": [
             {
               "startOffset": 0,
-              "endOffset": 221,
-              "count": 1
-            }
-          ],
-          "isBlockCoverage": true
-        },
-        {
-          "functionName": "",
-          "ranges": [
-            {
-              "startOffset": 1,
-              "endOffset": 219,
+              "endOffset": 155,
               "count": 1
             },
             {
-              "startOffset": 91,
-              "endOffset": 100,
+              "startOffset": 29,
+              "endOffset": 38,
               "count": 0
             }
           ],
@@ -96,8 +74,8 @@
           "functionName": "cool",
           "ranges": [
             {
-              "startOffset": 102,
-              "endOffset": 123,
+              "startOffset": 40,
+              "endOffset": 61,
               "count": 1
             }
           ],
@@ -107,19 +85,19 @@
           "functionName": "awesome",
           "ranges": [
             {
-              "startOffset": 125,
-              "endOffset": 169,
+              "startOffset": 63,
+              "endOffset": 107,
               "count": 1
             }
           ],
           "isBlockCoverage": true
         },
         {
-          "functionName": "setTimeout",
+          "functionName": "",
           "ranges": [
             {
-              "startOffset": 192,
-              "endOffset": 210,
+              "startOffset": 130,
+              "endOffset": 148,
               "count": 1
             }
           ],

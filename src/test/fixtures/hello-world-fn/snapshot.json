@@ -4,16 +4,6 @@
     "statementMap": {
       "s0": {
         "start": {
-          "line": 1,
-          "column": 0
-        },
-        "end": {
-          "line": 8,
-          "column": 3
-        }
-      },
-      "s1": {
-        "start": {
           "line": 2,
           "column": 2
         },
@@ -22,7 +12,7 @@
           "column": 30
         }
       },
-      "s2": {
+      "s1": {
         "start": {
           "line": 5,
           "column": 0
@@ -32,7 +22,7 @@
           "column": 12
         }
       },
-      "s3": {
+      "s2": {
         "start": {
           "line": 6,
           "column": 0
@@ -44,42 +34,17 @@
       }
     },
     "s": {
-      "s0": 1,
-      "s1": 2,
-      "s2": 1,
-      "s3": 1
+      "s0": 2,
+      "s1": 1,
+      "s2": 1
     },
     "fnMap": {
       "f0": {
-        "name": "",
-        "decl": {
-          "start": {
-            "line": 1,
-            "column": 1
-          },
-          "end": {
-            "line": 8,
-            "column": 1
-          }
-        },
-        "loc": {
-          "start": {
-            "line": 1,
-            "column": 1
-          },
-          "end": {
-            "line": 8,
-            "column": 1
-          }
-        },
-        "line": 1
-      },
-      "f1": {
         "name": "helloWorld",
         "decl": {
           "start": {
             "line": 1,
-            "column": 62
+            "column": 0
           },
           "end": {
             "line": 3,
@@ -89,7 +54,7 @@
         "loc": {
           "start": {
             "line": 1,
-            "column": 62
+            "column": 0
           },
           "end": {
             "line": 3,
@@ -100,8 +65,7 @@
       }
     },
     "f": {
-      "f0": 1,
-      "f1": 2
+      "f0": 2
     },
     "branchMap": {},
     "b": {}
