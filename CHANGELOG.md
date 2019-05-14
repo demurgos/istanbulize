@@ -1,6 +1,7 @@
 # Next
 
 - **[Fix]** Update dependencies.
+- **[Fix]** Add support for V8 right-trimmed script range.
 
 # 0.1.2 (2018-12-21)
 

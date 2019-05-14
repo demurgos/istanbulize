@@ -65,7 +65,7 @@ export class IstambulizeScript {
   public constructor(options: Readonly<IstambulizeScriptOptions>) {
     this.path = undefined;
     this.ast = babelParse(
-      options.sourceText,
+      options.sourceText.trimRight(),
       {
         sourceType: options.sourceType,
         plugins: ["dynamicImport", "importMeta"],

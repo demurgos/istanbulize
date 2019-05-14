@@ -1,6 +1,6 @@
 [
   {
-    "sourceText": "const Bluebird = require(\"bluebird\");\nconst fs = require(\"fs\");\n\nreadTextFileAsync = Bluebird.promisify(function (params, cb) {\n  fs.readFile(params, \"UTF-8\", cb);\n});\n\nreadTextFileAsync(\"./main.js\")\n",
+    "sourceText": "function absWithBugs (x) {\n  if (x > 0) { // Should be <\n    x *= 1; // Should be -1\n  }\n  return x;\n}\n\nabsWithBugs(3);\nabsWithBugs(10);\n",
     "sourceType": "script",
     "scriptCov": {
       "scriptId": "338",
@@ -11,19 +11,19 @@
           "ranges": [
             {
               "startOffset": 0,
-              "endOffset": 199,
+              "endOffset": 136,
               "count": 1
             }
           ],
           "isBlockCoverage": true
         },
         {
-          "functionName": "",
+          "functionName": "absWithBugs",
           "ranges": [
             {
-              "startOffset": 104,
-              "endOffset": 165,
-              "count": 1
+              "startOffset": 0,
+              "endOffset": 102,
+              "count": 2
             }
           ],
           "isBlockCoverage": true

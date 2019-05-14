@@ -3,7 +3,7 @@
     "sourceText": "console.log('Hello, World!')\n",
     "sourceType": "script",
     "scriptCov": {
-      "scriptId": "335",
+      "scriptId": "338",
       "url": "file:///main.js",
       "functions": [
         {
@@ -11,7 +11,7 @@
           "ranges": [
             {
               "startOffset": 0,
-              "endOffset": 29,
+              "endOffset": 28,
               "count": 1
             }
           ],

@@ -3,7 +3,7 @@
     "sourceText": "// function that's not called.\nfunction a() {\n  if (x == 42) {\n    if (x == 43) b(); else c();\n  }\n}\n\n// function that's called once.\n  function b () {\n    const i = a ? 'hello' : 'goodbye'\n    const ii = a && b\n    const iii = a || 33\n    return ii\n  }\n\nb()\n\n// function that's called multiple times.\nconst c = () => {\n  const i = 22\n  const ii = i &&\n    99\n}\n\nc(); c()\n\n// class that never has member functions called.\nclass Foo {\n  constructor () {\n    this.test = 99\n  }\n  hello () {\n    console.info('hello')\n  }\n}\n\n// class that has member functions called.\n  class Bar {\n    constructor () {\n      this.test = 99\n    }\n    hello () {\n      console.info(`Hello ${this.test}`)\n    }\n  }\n\nconst d = new Bar()\nd.hello()\n",
     "sourceType": "script",
     "scriptCov": {
-      "scriptId": "335",
+      "scriptId": "338",
       "url": "file:///main.js",
       "functions": [
         {
@@ -11,7 +11,7 @@
           "ranges": [
             {
               "startOffset": 0,
-              "endOffset": 724,
+              "endOffset": 723,
               "count": 1
             }
           ],

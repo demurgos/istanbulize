@@ -272,7 +272,7 @@
         "line": 7
       },
       "f2": {
-        "name": "",
+        "name": "setTimeout",
         "decl": {
           "start": {
             "line": 12,

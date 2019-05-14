@@ -3,7 +3,7 @@
     "sourceText": "require('./timeout')\n\nconsole.info('i am a line of code')\n\nfunction apple (awesome) {\n  if (false || true) {\n    console.info('what')\n  }\n  if (true || false) {\n    console.log('hey')\n  }\n}\n\nfunction missed () {\n  \n}\n\napple()\napple()\napple()\n",
     "sourceType": "script",
     "scriptCov": {
-      "scriptId": "335",
+      "scriptId": "338",
       "url": "file:///main.js",
       "functions": [
         {
@@ -11,7 +11,7 @@
           "ranges": [
             {
               "startOffset": 0,
-              "endOffset": 242,
+              "endOffset": 241,
               "count": 1
             }
           ],
@@ -51,7 +51,7 @@
     "sourceText": "const a = 'apple' ? 'banana' : 'grape'\n\nfunction cool () {\n\n}\n\nfunction awesome () {\n  console.log('hey')\n}\nawesome()\n\nsetTimeout(() => {\n  cool()\n}, 500)\n",
     "sourceType": "script",
     "scriptCov": {
-      "scriptId": "336",
+      "scriptId": "339",
       "url": "file:///timeout.js",
       "functions": [
         {
@@ -59,7 +59,7 @@
           "ranges": [
             {
               "startOffset": 0,
-              "endOffset": 155,
+              "endOffset": 154,
               "count": 1
             },
             {
@@ -93,7 +93,7 @@
           "isBlockCoverage": true
         },
         {
-          "functionName": "",
+          "functionName": "setTimeout",
           "ranges": [
             {
               "startOffset": 130,

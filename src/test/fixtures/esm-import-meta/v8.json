@@ -1,9 +1,41 @@
 [
   {
+    "sourceText": "export function importMeta () {\n  console.log(import.meta)\n}\n",
+    "sourceType": "module",
+    "scriptCov": {
+      "scriptId": "596",
+      "url": "file:///import-meta.mjs",
+      "functions": [
+        {
+          "functionName": "",
+          "ranges": [
+            {
+              "startOffset": 0,
+              "endOffset": 61,
+              "count": 2
+            }
+          ],
+          "isBlockCoverage": true
+        },
+        {
+          "functionName": "importMeta",
+          "ranges": [
+            {
+              "startOffset": 7,
+              "endOffset": 60,
+              "count": 1
+            }
+          ],
+          "isBlockCoverage": true
+        }
+      ]
+    }
+  },
+  {
     "sourceText": "import('./import-meta')\n  .then(({importMeta}) => importMeta())\n",
     "sourceType": "script",
     "scriptCov": {
-      "scriptId": "590",
+      "scriptId": "594",
       "url": "file:///main.js",
       "functions": [
         {
@@ -11,22 +43,22 @@
           "ranges": [
             {
               "startOffset": 0,
-              "endOffset": 64,
+              "endOffset": 63,
               "count": 1
             }
           ],
           "isBlockCoverage": true
         },
         {
-          "functionName": "",
+          "functionName": "then",
           "ranges": [
             {
               "startOffset": 32,
               "endOffset": 62,
-              "count": 0
+              "count": 1
             }
           ],
-          "isBlockCoverage": false
+          "isBlockCoverage": true
         }
       ]
     }

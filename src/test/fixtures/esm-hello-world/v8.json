@@ -1,9 +1,41 @@
 [
   {
+    "sourceText": "export function helloWorld () {\n  console.log('Hello, World!')\n}\n",
+    "sourceType": "module",
+    "scriptCov": {
+      "scriptId": "596",
+      "url": "file:///hello-world.mjs",
+      "functions": [
+        {
+          "functionName": "",
+          "ranges": [
+            {
+              "startOffset": 0,
+              "endOffset": 65,
+              "count": 2
+            }
+          ],
+          "isBlockCoverage": true
+        },
+        {
+          "functionName": "helloWorld",
+          "ranges": [
+            {
+              "startOffset": 7,
+              "endOffset": 64,
+              "count": 1
+            }
+          ],
+          "isBlockCoverage": true
+        }
+      ]
+    }
+  },
+  {
     "sourceText": "import('./hello-world')\n  .then(helloWorld => helloWorld.helloWorld())\n",
     "sourceType": "script",
     "scriptCov": {
-      "scriptId": "590",
+      "scriptId": "594",
       "url": "file:///main.js",
       "functions": [
         {
@@ -11,22 +43,22 @@
           "ranges": [
             {
               "startOffset": 0,
-              "endOffset": 71,
+              "endOffset": 70,
               "count": 1
             }
           ],
           "isBlockCoverage": true
         },
         {
-          "functionName": "",
+          "functionName": "then.helloWorld",
           "ranges": [
             {
               "startOffset": 32,
               "endOffset": 69,
-              "count": 0
+              "count": 1
             }
           ],
-          "isBlockCoverage": false
+          "isBlockCoverage": true
         }
       ]
     }

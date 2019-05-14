@@ -3,7 +3,7 @@
     "sourceText": "function getParity (x) {\n  return x % 2 === 0 ? 'even' : 'odd'\n}\n\ngetParity(0)\ngetParity(1)\ngetParity(2)\ngetParity(3)\n",
     "sourceType": "script",
     "scriptCov": {
-      "scriptId": "335",
+      "scriptId": "338",
       "url": "file:///main.js",
       "functions": [
         {
@@ -11,7 +11,7 @@
           "ranges": [
             {
               "startOffset": 0,
-              "endOffset": 118,
+              "endOffset": 117,
               "count": 1
             }
           ],
