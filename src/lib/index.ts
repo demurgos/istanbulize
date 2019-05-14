@@ -1,4 +1,4 @@
-import { parse as babelParse } from "@babel/parser";
+import { parse as babelParse, ParserPlugin } from "@babel/parser";
 import babelTraverse, { NodePath } from "@babel/traverse";
 import { File, Function as FunctionNode, Node, Program, SourceLocation, Statement } from "@babel/types";
 import { FunctionCov, RangeCov, ScriptCov } from "@c88/v8-coverage";
@@ -68,7 +68,7 @@ export class IstambulizeScript {
       options.sourceText.trimRight(),
       {
         sourceType: options.sourceType,
-        plugins: ["dynamicImport", "importMeta"],
+        plugins: ["bigInt", "dynamicImport", "importMeta"],
       },
     );
     this.roots = new Set();

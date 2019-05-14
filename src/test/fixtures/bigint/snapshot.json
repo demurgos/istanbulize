@@ -1,0 +1,62 @@
+{
+  "file:///main.js": {
+    "path": "file:///main.js",
+    "statementMap": {
+      "s0": {
+        "start": {
+          "line": 2,
+          "column": 2
+        },
+        "end": {
+          "line": 2,
+          "column": 16
+        }
+      },
+      "s1": {
+        "start": {
+          "line": 5,
+          "column": 0
+        },
+        "end": {
+          "line": 5,
+          "column": 10
+        }
+      }
+    },
+    "s": {
+      "s0": 1,
+      "s1": 1
+    },
+    "fnMap": {
+      "f0": {
+        "name": "add2",
+        "decl": {
+          "start": {
+            "line": 1,
+            "column": 0
+          },
+          "end": {
+            "line": 3,
+            "column": 1
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 1,
+            "column": 0
+          },
+          "end": {
+            "line": 3,
+            "column": 1
+          }
+        },
+        "line": 1
+      }
+    },
+    "f": {
+      "f0": 1
+    },
+    "branchMap": {},
+    "b": {}
+  }
+}
